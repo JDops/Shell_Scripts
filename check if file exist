@@ -1,0 +1,13 @@
+## Using '['
+#!/bin/bash
+filecheck="/etc/passwd"
+if [ -f "$filecheck" ] && [ -r "$filecheck" ]; then
+		echo $filecheck exist and readable
+fi
+
+### Using '[[' syntax
+#!/bin/bash
+filecheck="/etc/passwd"
+if [[ -f "$filecheck"  &&  -r "$filecheck" ]]; then
+		echo $filecheck exist and readable
+fi
