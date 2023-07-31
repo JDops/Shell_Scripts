@@ -1,0 +1,7 @@
+## Ip address --> /var/log/secure --> Threshold (5) --> iptables(DROP)
+cp ../secure .
+head secure
+#head secure | awk -F " " '{print $1}' --> field seperator white space
+#head secure | awk '{print $11}'
+head secure | grep -E "([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})"
+
