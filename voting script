@@ -1,0 +1,9 @@
+#!/bin/bash
+read -p "enter you age " age
+read -p "enter your country  " country
+if [[ $age -ge 18 ]] && ( [[ $country == "India" ]] || [[ $country == "india" ]] ) 
+then
+    echo " you can vote"
+else
+    echo "you cannot vote"
+fi
