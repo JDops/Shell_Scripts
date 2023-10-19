@@ -1,0 +1,2 @@
+for i in 'cat /var/tmp/jai'; do ./script.sh $i;done
+
