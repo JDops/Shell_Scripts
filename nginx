@@ -1,0 +1,7 @@
+#!/bin/bash
+service nginx status > output.txt
+if grep -q "running" output.txt; then
+echo "nginx service is running"
+else
+echo "service is stopped" | mail -s "nginx service is stopped " jaideepojha115@gmail.com
+fi
